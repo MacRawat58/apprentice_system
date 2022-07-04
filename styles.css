@@ -1,0 +1,345 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+	font-family: "Poppins", sans-serif;
+}
+
+/* base styling */
+
+body {
+	width: 100vw;
+	height: 100vh;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+section {
+	height: 100vh;
+	max-width: 100%;
+	padding: 20px;
+}
+
+header {
+	width: 100%;
+	background-color: rgb(198, 243, 229);
+	border-bottom: 2px solid rgba(0, 0, 0, 0.171);
+}
+
+#navbar {
+	width: 80%;
+	height: 100px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+}
+
+.logo {
+	width: 200px;
+}
+
+.logo-text {
+	color: rgb(0, 73, 156);
+}
+
+.home {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: calc(100vh - 100px);
+	flex-direction: column;
+	background-color: rgb(221, 243, 255);
+}
+
+.error_display {
+	background-color: rgb(255, 133, 133);
+	color: rgb(80, 0, 0);
+	padding: 10px;
+	border-radius: 10px;
+	margin: 20px;
+	font-weight: bold;
+	width: 100%;
+	text-align: center;
+}
+
+/* login */
+
+.login-container {
+	height: 450px;
+	width: 400px;
+	background: linear-gradient(
+		15deg,
+		rgba(3, 168, 132, 0.39),
+		rgba(0, 204, 255, 0.384)
+	);
+	border-radius: 10px;
+	backdrop-filter: blur;
+	border: 0.5px solid rgb(255, 218, 218);
+	box-shadow: 0px 0px 20px rgb(116, 255, 248);
+	padding: 30px;
+	margin-top: 50px;
+}
+
+.login-form {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 100%;
+}
+
+.login-form h1 {
+	text-align: center;
+	color: #fff;
+	margin-bottom: 5px;
+}
+
+.form {
+	border-top: 1px solid rgba(71, 71, 71, 0.096);
+	padding: 5px;
+	width: 100%;
+}
+
+.form input,
+a {
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	padding: 10px 10px;
+	border: none;
+	outline: none;
+	color: rgb(0, 104, 104);
+	background-color: rgb(255, 255, 255);
+	border-radius: 5px;
+}
+
+.form input:focus {
+	background-color: rgb(210, 252, 255);
+	color: rgb(0, 75, 105);
+	border: 0.5px rgb(0, 88, 139) solid;
+	font-weight: bolder;
+}
+
+.form a {
+	background-color: rgb(0, 162, 184);
+	text-align: center;
+
+	color: white;
+	font-size: 20px;
+	border-radius: 5px;
+	transition: 0.5s ease-in-out;
+	border: 0.5px solid rgb(255, 218, 218);
+	text-decoration: none;
+}
+
+.form a:hover {
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 132, 255);
+	border: 0.5px solid rgb(0, 153, 255);
+}
+
+.btn {
+	background-color: rgb(0, 183, 255);
+	color: white;
+	font-size: 20px;
+	border-radius: 5px;
+	transition: 0.5s ease-in-out;
+	padding: 10px 10px;
+	border: none;
+	outline: none;
+}
+
+.app-pass-note {
+	text-align: center;
+	color: rgb(184, 0, 0);
+	margin-top: 20px;
+	font-weight: 700;
+}
+
+/* apprentice registration  */
+
+.content {
+	padding: 0;
+}
+.main {
+	height: 100%;
+	display: flex;
+	width: 100vw;
+}
+
+.side-1 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 21%;
+	background-color: rgb(241, 241, 241);
+	padding-top: 50px;
+	overflow-y: scroll;
+	height: 100%;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.541);
+	z-index: 9;
+	/* position: fixed; */
+}
+
+.wlcm-msg {
+	text-align: center;
+	margin: 20px 0 20px;
+	color: rgb(0, 98, 143);
+}
+
+.wlcm-msg p {
+	font-size: 0.9rem;
+}
+
+.logout-btn {
+	padding: 15px 0;
+	border-bottom: 1px rgba(0, 0, 0, 0.212) dotted;
+}
+
+.btn {
+	background-color: rgb(0, 122, 192);
+	padding: 3px 5px;
+	outline: none;
+	border: none;
+	color: #fff;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.belpic {
+	width: 90%;
+	padding: 5px;
+}
+
+.menu {
+	display: flex;
+	flex-direction: column;
+	padding: 0 10px;
+	height: 80%;
+}
+
+.menu a {
+	width: 100%;
+	margin-top: 30px;
+	text-decoration: none;
+	background-color: #fff;
+	padding: 4px 10px;
+	border: 1px solid rgb(168, 168, 168);
+	border-radius: 20px;
+	color: rgb(94, 93, 93);
+	font-size: 0.8rem;
+	font-weight: bold;
+}
+
+.side-2 {
+	width: 79%;
+	height: 100vh;
+	overflow-y: scroll;
+
+	background-color: rgba(193, 200, 244, 0.484);
+}
+
+.upper-tab {
+	border-top: 1px dotted rgb(0, 140, 255);
+	border-bottom: 1px dotted rgb(0, 140, 255);
+	color: rgb(0, 140, 255);
+}
+
+.app-reg {
+	padding-top: 30px;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.input-table {
+	height: 80%;
+	margin: auto;
+	width: 80%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+thead {
+	background-color: rgb(252, 215, 92);
+	/* font-weight: bold; */
+	font-size: 12px;
+}
+th {
+	padding: 2px;
+}
+
+tr {
+	height: 20px;
+}
+
+tr:hover {
+	background-color: rgb(143, 255, 143);
+}
+
+td {
+	font-size: 11px;
+	padding: 5px 5px;
+}
+
+td a {
+	padding: 2px;
+	cursor: pointer;
+	font-size: 15px;
+}
+
+.form-input {
+	width: 250px;
+}
+
+.search_menu {
+	display: inline-block;
+	margin-left: 50px;
+}
+
+.app-list-menu {
+	margin: 5px auto;
+	display: flex;
+	justify-content: space-around;
+	padding: 10px 5px;
+}
+.app-list {
+	width: 100%;
+	height: min-content;
+
+	padding: 20px;
+}
+
+.attendance-option {
+	margin: 20px;
+}
+.attendance_records {
+	padding: 5px 10px;
+}
+
+
+/* PERSONAL DETAILS */
+
+.marquee {
+	background-color: rgb(0, 82, 107);
+	height: 50px;
+	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+	font-size: 25px;
+	color: #fff;
+	margin: 20px 0;
+}
